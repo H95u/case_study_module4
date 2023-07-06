@@ -1,6 +1,6 @@
-package com.example.candy.model.dto;
+package com.example.cs.model.dto;
 
-import com.example.candy.model.Role;
+import com.example.cs.model.Role;
 
 import java.util.Set;
 

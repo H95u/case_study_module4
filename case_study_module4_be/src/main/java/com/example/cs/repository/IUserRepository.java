@@ -1,6 +1,6 @@
-package com.example.candy.repository;
+package com.example.cs.repository;
 
-import com.example.candy.model.User;
+import com.example.cs.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

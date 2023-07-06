@@ -1,4 +1,4 @@
-package com.example.candy.jwt;
+package com.example.cs.jwt;
 
 import com.example.candy.jwt.service.JwtService;
 import com.example.candy.service.impl.UserService;

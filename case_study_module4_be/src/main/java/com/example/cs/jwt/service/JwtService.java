@@ -1,6 +1,6 @@
-package com.example.candy.jwt.service;
+package com.example.cs.jwt.service;
 
-import com.example.candy.model.UserPrinciple;
+import com.example.cs.model.UserPrinciple;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;

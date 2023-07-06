@@ -1,4 +1,4 @@
-package com.example.candy.model;
+package com.example.cs.model;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

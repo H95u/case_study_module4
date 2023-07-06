@@ -1,2 +1,4 @@
-package com.example.cs.service;public interface IGeneralService {
+package com.example.cs.service;
+
+public interface IGeneralService {
 }

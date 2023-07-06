@@ -1,9 +1,9 @@
-package com.example.candy.config;
+package com.example.cs.config;
 
-import com.example.candy.jwt.CustomAccessDeniedHandler;
-import com.example.candy.jwt.JwtAuthenticationTokenFilter;
-import com.example.candy.jwt.RestAuthenticationEntryPoint;
-import com.example.candy.service.impl.UserService;
+import com.example.cs.jwt.CustomAccessDeniedHandler;
+import com.example.cs.jwt.JwtAuthenticationTokenFilter;
+import com.example.cs.jwt.RestAuthenticationEntryPoint;
+import com.example.cs.service.impl.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

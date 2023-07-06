@@ -1,2 +1,4 @@
-package com.example.cs.model;public class Songs {
+package com.example.cs.model;
+
+public class Songs {
 }
