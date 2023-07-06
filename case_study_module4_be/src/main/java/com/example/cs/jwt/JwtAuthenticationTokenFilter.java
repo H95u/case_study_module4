@@ -1,7 +1,7 @@
 package com.example.cs.jwt;
 
-import com.example.candy.jwt.service.JwtService;
-import com.example.candy.service.impl.UserService;
+import com.example.cs.jwt.service.JwtService;
+import com.example.cs.service.impl.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
