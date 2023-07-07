@@ -11,7 +11,9 @@ public class SongPlaylist {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private String name;
+    private String thumbnail;
 
-    @OneToMany
+    @ManyToMany
     private List<Song> songs;
 }

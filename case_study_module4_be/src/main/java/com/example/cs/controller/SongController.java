@@ -44,7 +44,7 @@ public class SongController {
             imagePath = image.getOriginalFilename();
             mp3Path = mp3.getOriginalFilename();
             FileCopyUtils.copy(image.getBytes(), new File(uploadImg + imagePath));
-            FileCopyUtils.copy(image.getBytes(), new File(uploadMp3 + mp3Path));
+            mp3.transferTo(new File(uploadMp3 + mp3Path));
             song.setImg("/img/" + imagePath);
             song.setMp3("/mp3/" + mp3Path);
         } else {
@@ -69,7 +69,7 @@ public class SongController {
                     imagePath = image.getOriginalFilename();
                     mp3Path = mp3.getOriginalFilename();
                     FileCopyUtils.copy(image.getBytes(), new File(uploadImg + imagePath));
-                    FileCopyUtils.copy(image.getBytes(), new File(uploadMp3 + mp3Path));
+                    mp3.transferTo(new File(uploadMp3 + mp3Path));
                     song.setImg("/img/" + imagePath);
                     song.setMp3("/mp3/" + mp3Path);
                 } else {
