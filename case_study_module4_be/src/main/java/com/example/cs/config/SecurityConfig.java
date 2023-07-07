@@ -62,10 +62,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.httpBasic().authenticationEntryPoint(restServicesEntryPoint());
         http.authorizeRequests()
                 .antMatchers("/api/auth/**").permitAll()
-                .antMatchers(HttpMethod.GET, "/api/candies/**", "/api/categories/**").permitAll()
-                .antMatchers(HttpMethod.POST, "/api/candies/**", "/api/categories/**").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.DELETE, "/api/candies/**", "/api/categories/**").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.PUT, "/api/candies/**", "/api/categories/**").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/api/songs/**", "/api/singers/**","/api/types/**").permitAll()
+                .antMatchers(HttpMethod.POST, "/api/songs/**", "/api/singers/**","/api/types/**").permitAll()
+                .antMatchers(HttpMethod.DELETE, "/api/songs/**", "/api/singers/**","/api/types/**").permitAll()
+                .antMatchers(HttpMethod.PUT, "/api/songs/**", "/api/singers/**","/api/types/**").permitAll()
                 .anyRequest().authenticated()
                 .and().csrf().disable();
         http.addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class)

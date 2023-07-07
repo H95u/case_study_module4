@@ -14,6 +14,7 @@ public class Song {
     private String img;
     private String mp3;
     private Long listenCount;
+    @Column(columnDefinition = "LONGTEXT",nullable = true)
     private String lyric;
     @OneToOne
     private Singer singer;
