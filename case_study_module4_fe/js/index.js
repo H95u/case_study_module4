@@ -49,3 +49,22 @@ function showAll() {
         }
     });
 }
+
+function searchByName() {
+    let name = $("#name-search").val()
+    $.ajax({
+        url: `http://localhost:8080/api/songs/search?name=${name}?page=0`,
+        type: "GET",
+        success: function (data){
+            let content = ` <div class="container-song">
+                                        <div class="inner-container">
+                                               <div class="row">`;
+            for (let i = 0; i < data.content.length; i++) {
+                content += getSong(data.content[i])
+            }
+            content += `</div>`;
+            content += `</div>`;
+            document.getElementById("songList").innerHTML = content;
+        }
+    })
+}
