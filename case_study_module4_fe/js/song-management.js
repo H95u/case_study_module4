@@ -11,10 +11,9 @@ function getSong(song) {
         </tr>`
 }
 
-let pageIndex;
+let pageIndex = 0;
 
-function showAll(page) {
-    pageIndex = page;
+function showAll() {
     $.ajax({
         type: "GET",
         url: `http://localhost:8080/api/songs?page=${pageIndex}`,
@@ -188,7 +187,7 @@ function deleteSong(id) {
         $.ajax({
             type: "DELETE",
             url: "http://localhost:8080/api/songs/" + id,
-            success: console.log("success")
+            success: showAll
         });
     }
 }
@@ -218,7 +217,7 @@ function updateSong() {
         type: "PUT",
         data: formData,
         success: function () {
-            showAll(0)
+            showAll()
         }
     })
     $('#updateSongModal').modal('hide');
