@@ -102,4 +102,10 @@ public class SongController {
         return new ResponseEntity<>(songService.findOne(id), HttpStatus.OK);
     }
 
+    @GetMapping("/search")
+    public ResponseEntity<Page<Song>> searchByName(@RequestParam(required = false, defaultValue = "") String name,
+                                                   @PageableDefault(size = 10)Pageable pageable){
+        return new ResponseEntity<>(songService.searchByName(name, pageable), HttpStatus.OK);
+
+    }
 }

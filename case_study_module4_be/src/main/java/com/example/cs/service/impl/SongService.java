@@ -40,4 +40,9 @@ public class SongService implements ISongService {
     public Page<Song> findByPage(Pageable pageable) {
         return iSongRepository.findAll(pageable);
     }
+
+    @Override
+    public Page<Song> searchByName(String name, Pageable pageable) {
+        return iSongRepository.searchByName(name, pageable);
+    }
 }
