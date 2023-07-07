@@ -4,33 +4,126 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .inner-container {
-    margin-top: 100px;
+    margin-top: 20px;
 }
+
 .row {
     margin: auto;
     width: 900px;
-    border: solid 1px #d7ced4;
 }
+
 img {
     width: 70px;
     height: 70px;
 }
+
 h6 {
     padding-top: 15px;
     padding-left: 20px;
 }
+
 p {
     font-size: 10px;
     padding-left: 20px;
 }
+
 .type {
     text-align: center;
     margin-top: 15px;
 }
+
 .col-lg-1 {
     margin: auto;
 }
+
 .bx-play:before {
     margin-left: 40px;
 }
+
+.icon {
+    color: blue;
+}
+
+.title {
+    color: #00c4ff;
+}
+
+body {
+}
+
+.navbar {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar-left {
+    display: flex;
+}
+
+.navbar-item {
+    color: rgba(10, 10, 10, 0.86);
+    text-decoration: none;
+    padding: 17px;
+    border-radius: 10px;
+
+}
+
+.navbar-right {
+    display: flex;
+}
+
+.search-box {
+    position: relative;
+    display: inline-block;
+}
+
+.search-input {
+    margin: 7px;
+    padding: 8px 25px;
+    border: solid;
+    border-radius: 5px;
+}
+
+.search-button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#songList {
+    margin-top: 100px;
+}
+
+#leaderBoard {
+    margin-top: 400px;
+    width: 300px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+.hr-border {
+    height: 1px;
+    background-color: black;
+    border: none;
+}
+
+#banner {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+
+}
+
